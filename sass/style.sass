@@ -1,0 +1,349 @@
+@import 'resets.scss'
+@import 'normalize2.scss'
+
+$skyblue: #00bfff
+$blue: #10205C
+$anydark-blue: #152348
+$gradient-blue: #2B5292
+$dark-blue: #010922
+
+@font-face
+    font-family: 'SF'
+    src: url('../fonts/SF-Pro-Display-Bold.otf') format('opentype')
+    font-weight: 700
+    font-style: normal
+
+@font-face
+    font-family: 'SF'
+    src: url('../fonts/SF-Pro-Display-Medium.otf') format('opentype')
+    font-weight: 500
+    font-style: normal
+
+@font-face
+    font-family: 'SF'
+    src: url('../fonts/SF-Pro-Display-Regular.otf') format('opentype')
+    font-weight: 400
+    font-style: normal
+
+@font-face
+    font-family: 'Inter'
+    src: url('../fonts/Inter-Bold.ttf')
+    font-weight: 700
+    font-style: normal
+
+*
+    box-sizing: border-box
+
+a
+    text-decoration: none
+    color: white
+    font-family: "SF"
+    font-weight: 400
+
+p
+    color: white
+    font-family: "SF"
+    font-weight: 400
+    line-height: 27.5px
+    letter-spacing: 0.8px
+
+html, body
+    height: max-content
+
+body
+    background: linear-gradient($dark-blue, $gradient-blue) no-repeat
+    padding-top: 49px
+
+.button-text
+    font-family: "Inter"
+    font-weight: 700
+    font-size: 24px
+
+.text-20
+    font-size: 20px
+    color: white
+    font-family: "SF"
+    font-weight: 500
+
+.subtitle
+    font-size: 25px
+    color: white
+    font-family: "SF"
+    font-weight: 400
+
+.title
+    font-size: 65px
+    color: white
+    font-family: "SF"
+    font-weight: 500
+    line-height: 110%
+
+.container
+    max-width: 1175px
+    margin: 0 auto
+    position: relative
+
+.nav-menu
+    display: flex
+    flex-direction: row
+    align-items: center
+    &__link
+        margin-right: 80px
+
+.header
+    min-height: 32px
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-bottom: 56px
+    &__logo
+        font-family: "SF"
+        font-weight: 700
+    &__nav
+        margin-left: auto
+    &__signup-button
+        background-color: $skyblue
+        border-radius: 20px
+        padding: 8px 16px
+        font-family: "SF"
+        font-weight: 700
+
+.hero
+    display: flex
+    flex-direction: row
+    margin-bottom: 91px
+    &__content
+        padding-top: 116px
+    &__title
+        font-size: 75px
+        margin-bottom: 67px
+        font-weight: 700
+    &__subtitle
+        margin-bottom: 67px
+        font-weight: 500
+    &__buttons
+        display: flex
+        flex-direction: row
+    &__signup-button
+        background-color: $skyblue
+        border-radius: 100px
+        width: 175px
+        height: 69px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 25px
+    &__joinnow-button
+        border: 2px solid $skyblue
+        border-radius: 100px
+        width: 175px
+        height: 69px
+        display: flex
+        justify-content: center
+        align-items: center
+    &__main-image
+        margin-left: auto
+
+.partners
+    margin-bottom: 91px
+    &__text
+        margin-bottom: 15px
+    &__companies
+        border-radius: 10px
+        background-color: rgba($anydark-blue, 0.8)
+        padding-top: 28px
+        padding-bottom: 28px
+        display: flex
+        flex-direction: row
+        justify-content: center
+    &__company
+        margin-right: 77.3px
+
+.creative
+    display: flex
+    flex-direction: row
+    margin-bottom: 91px
+    &__content
+        padding-top: 43px
+        display: flex
+        flex-direction: column
+        margin-left: auto
+    &__title
+        margin-bottom: 50px
+        text-align: right
+    &__subtitle
+        margin-bottom: 50px
+        text-align: right
+    &__creative-tools-button
+        margin-left: auto
+        background-color: $skyblue
+        border-radius: 20px
+        padding: 16px 32px
+
+.custom
+    display: flex
+    flex-direction: row
+    margin-bottom: 91px
+    &__content
+        padding-top: 20px
+    &__title
+        margin-bottom: 50px
+    &__subtitle
+        margin-bottom: 59px
+    &__custom-collections-button
+        background-color: $skyblue
+        border-radius: 20px
+        padding: 16px 32px
+        display: inline-block
+    &__main-image
+        margin-left: auto
+
+.dashboard
+    display: flex
+    flex-direction: row
+    margin-bottom: 91px
+    &__content
+        padding-top: 43px
+        display: flex
+        flex-direction: column
+        margin-left: auto
+    &__title
+        margin-bottom: 50px
+        text-align: right
+    &__subtitle
+        margin-bottom: 50px
+        text-align: right
+    &__dashboard-button
+        margin-left: auto
+        background-color: $skyblue
+        border-radius: 20px
+        padding: 16px 32px
+
+.review
+    margin-bottom: 91px
+    &__testimonials
+        text-align: center
+    &__title
+        text-align: center
+        margin-bottom: 153px
+    &__cards
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    &__card
+        position: relative
+        width: 355px
+        height: 355px
+        background-color: rgba($skyblue, 0.4)
+        border-radius: 20px
+        padding: 97px 22px 14px 23px
+    &__avatar
+        position: absolute
+        top: -90px
+        left: 90px
+    &__name
+        text-align: center
+    &__profession
+        color: rgba(white, 0.6)
+        text-align: center
+        margin-bottom: 22px
+    &__text
+        text-align: center
+
+.community
+    margin-bottom: 203px
+    padding: 29px 0px 27px 0px
+    background: linear-gradient(to right, $blue, $skyblue)
+    border-radius: 20px
+    text-align: center
+    &__subtitle
+        margin-bottom: 32px
+    &__title
+        margin-bottom: 32px
+    &__button
+        display: inline-block
+        border-radius: 20px
+        padding: 16px 32px
+        background-color: white
+    &__button-text
+        color: $skyblue
+
+.footer
+    padding-top: 60px
+    padding-bottom: 120px
+    width: 100%
+    height: 544px
+    background: linear-gradient(to left, $blue, $skyblue)
+    &__top
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        margin-bottom: 43px
+    &__copyright
+        padding-top: 64px
+        margin-right: 206px
+    &__copyright-text
+        font-size: 15px
+    &__services
+        margin-right: 150px
+    &__about
+        margin-right: 160px
+    &__category-name
+        margin-bottom: 20px
+        font-size: 17px
+        color: #FFD2DD
+    &__link
+        margin-bottom: 20px
+        font-size: 15px
+    &__button
+        width: 50px
+        height: 50px
+        border-radius: 50px
+        background-color: #FFD2DD
+        display: flex
+        justify-content: center
+        align-items: center
+    &__bot
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    &__subscribe-text
+        font-size: 22px
+        margin-bottom: 30px
+    &__email-form
+        position: relative
+        display: inline-block
+        background-color: rgba(255, 255, 255, 0)
+    &__email-input
+        border: none
+        outline: none
+        padding-top: 10px
+        padding-bottom: 23px
+        border-radius: 4px
+        background-color: rgba(255, 255, 255, 0)
+        color: white
+        font-size: 15px
+        width: 239px
+        &::placeholder
+            color: rgba(255, 255, 255, 0.5)
+            font-size: 15px
+    &__submit-button
+        position: absolute
+        background-color: #FFD2DD
+        border: none
+        border-top-left-radius: 8px
+        border-top-right-radius: 8px
+        width: 50px
+        height: 50px
+    &__email-hr
+        border: none
+        margin: 0
+        width: 289px
+        height: 1px
+        background-color: rgba(#e5e5e5, 0.1)
+    &__social-media
+        padding-top: 123px
+    &__social-logo
+        margin-right: 40px
+        &:last-child
+            margin: 0
